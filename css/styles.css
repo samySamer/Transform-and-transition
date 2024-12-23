@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --aqua:#409f96;
+    --facebook:#1a54a2;
+}
+body{
+    width: 530px;
+    gap:20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid var(--aqua);
+
+    box-shadow: 0px 0px 15px 15px var(--aqua);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.profile:hover{
+    box-shadow: 0px 0px 15px 7px var(--aqua);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.footer{
+    display: flex;
+    gap:24px;
+    font-size: 20px;
+    color:white;
+}
+.item{
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+.facebook{
+    background-color: var(--facebook);
+}
+.instagram{
+    background: tomato;
+}
+.linked{
+    background-color: #0a97b3;
+}
+.tiktok{
+    background-color: black;
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 1px black;
+}
